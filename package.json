@@ -6,9 +6,10 @@
   "scripts": {
     "server": "babel-node server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf build && mkdir build",
-    "build": "babel -d ./build ./server",
-    "create_corpus_json": "babel-node tools/create_corpus_json.js"
+    "clean": "rm -rf build_init && mkdir build_init",
+    "build": "babel -d ./build_init ./server",
+    "create_desc_json": "babel-node tools/create_desc_json.js",
+    "init_db":"babel-node tools/init_database.js"
   },
   "author": "Ko Ohashi",
   "license": "MIT",
@@ -24,11 +25,8 @@
     "body-parser": "^1.18.2",
     "connect-multiparty": "^2.0.0",
     "crypto": "^1.0.1",
-    "epub": "^0.2.0",
-    "ethereumjs-util": "^5.1.2",
     "express": "^4.16.1",
     "express-session": "^1.15.6",
-    "html2plaintext": "^1.1.1",
     "mkdirp": "^0.5.1",
     "mongodb": "^2.2.31",
     "multer": "^1.3.0",
@@ -36,8 +34,6 @@
     "sha256": "^0.2.0",
     "unirest": "^0.5.1",
     "uuid": "^3.1.0",
-    "wav-file-info": "0.0.8",
-    "web3": "^1.0.0-beta.26",
-    "zeppelin-solidity": "^1.4.0"
+    "wav-file-info": "0.0.8"
   }
 }

@@ -1,0 +1,3 @@
+
+forever start -c node ./build_voice/
+
