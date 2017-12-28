@@ -27,6 +27,7 @@ let create_desc_json = () => {
 
   let train_corpus = ""
   let valid_corpus = ""
+  let prediction_corpus = ""
 
   Promise.resolve()
   .then(() => {
@@ -115,11 +116,22 @@ let create_desc_json = () => {
                 duration: duration
               }
 
+              // for prediction
+              const json_2 = {
+                key: wav_path,
+                text: new_phonetic,
+                duration: duration
+              }
+
               let rand_val = Math.floor((Math.random() * 11) + 1);
               if (rand_val > 2){
                 train_corpus = train_corpus + JSON.stringify(json_1)
                 train_total_sec = train_total_sec + duration
                 train_total_cnt++
+
+                // prediction_corpus
+                prediction_corpus = prediction_corpus + JSON.stringify(json_2)
+
               } else {
                 valid_corpus = valid_corpus + JSON.stringify(json_1)
                 valid_total_sec = valid_total_sec + duration
@@ -131,6 +143,7 @@ let create_desc_json = () => {
               } else {
                 if (rand_val > 2){
                   train_corpus = train_corpus+"\n"
+                  prediction_corpus = prediction_corpus+"\n"
                 } else {
                   valid_corpus = valid_corpus+"\n"
                 }
@@ -172,6 +185,20 @@ let create_desc_json = () => {
       let file_name = CORPUS_DIR+"valid_corpus.json"
 
       fs.writeFile(file_name, valid_corpus, (err) => {
+        if (err){
+          reject(err)
+        }
+        resolve()
+      });
+    })
+  })
+  .then(() => {
+    // save train_corpus
+    return new Promise((resolve, reject) => {
+
+      let file_name = CORPUS_DIR+"prediction_corpus.json"
+
+      fs.writeFile(file_name, prediction_corpus, (err) => {
         if (err){
           reject(err)
         }

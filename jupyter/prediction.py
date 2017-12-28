@@ -34,7 +34,7 @@ def get_predictions(audio_path, input_to_softmax, model_path):
     # load the train and test data
     # if you are using spectrogram, change mfcc_dim
     data_gen = AudioGenerator(spectrogram=False, mfcc_dim=13)
-    data_gen.load_train_data(desc_file='./jupyter/train_corpus.json')
+    data_gen.load_train_data(desc_file='./jupyter/prediction_corpus.json')
     data_point = data_gen.normalize(data_gen.featurize(audio_path))
     # print(data_gen.feats_mean)
     # print(data_gen.feats_std)
