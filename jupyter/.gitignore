@@ -1,0 +1,8 @@
+#
+/LibriSpeech
+train_corpus.json
+valid_corpus.json
+dev-clean.tar.gz
+/__pycache__
+test-clean.tar.gz
+
