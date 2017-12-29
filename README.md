@@ -298,9 +298,16 @@ jupyter notebook --ip=0.0.0.0 --no-browser
 ### Node version
 node v8.9.1
 
+### Tech stack
+- Ethereum blockchain
+- Node
+- Tensorflow/Keras 
+- MongoDB
+
 ## Todo  
 - Should separate blockchain part and node server part.
 - Easy Install
+- Use distributed storage like IPFS
 - Adopt many languages.
 - Adopt other no voice recognition AI project  
 - Feature to share data with other AI projects
