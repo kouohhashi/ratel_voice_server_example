@@ -1,14 +1,14 @@
-## Ratel Voice Example  
+## Ratel Voice Example ( Server and blockchain )
 This is a proof of concept for using blockchain incentive to obtain AI data.
 
 You can test entire flow from obtaining data for AI training in exchange for tokens on a ethereum private network to train model to serve service.  
 
 This example is specific for voice recognition system.
->  you can try it without blockchain parts to learn AI   
+>  you can try it without blockchain parts if you want   
 For more information about the idea, please check [website](https://ratelnetwork.com).  
 
 ## Client web app
-For client side scripts, please see [here](https://github.com/kouohhashi/ratel_voice_web_client_example)  
+For client side scripts, please check [here](https://github.com/kouohhashi/ratel_voice_web_client_example)  
 
 ## How to setup this system
 
