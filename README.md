@@ -10,6 +10,9 @@ For more information about the idea, please check [website](https://ratelnetwork
 ## Client web app
 For client side scripts, please check [here](https://github.com/kouohhashi/ratel_voice_web_client_example)  
 
+## Demo
+Here's a live [demo](https://ratel_voice.grabit.co/)  This is only for testing purpose.
+
 ## How to setup this system
 
 ### create workspace
@@ -301,7 +304,7 @@ node v8.9.1
 ### Tech stack
 - Ethereum blockchain
 - Node
-- Tensorflow/Keras 
+- Tensorflow/Keras
 - MongoDB
 
 ## Todo  
