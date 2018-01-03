@@ -6,8 +6,8 @@
   "scripts": {
     "server": "babel-node server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf build_init && mkdir build_init",
-    "build": "babel -d ./build_init ./server",
+    "clean": "rm -rf build_voice && mkdir build_voice",
+    "build": "babel -d ./build_voice ./server",
     "create_desc_json": "babel-node tools/create_desc_json.js",
     "init_db":"babel-node tools/init_database.js"
   },

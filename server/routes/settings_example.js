@@ -7,4 +7,5 @@ export const ORACLE_ADDRESS = "<oracle address>"
 export const ORACLE_PASSWORD = "<oracle password>"
 
 // for ai training
-export const CORPUS_DIR = "./jupyter/"
+// export const CORPUS_DIR = "./jupyter/"
+export const JUPYTER_DIR = '<absolute path for jupyter directory>'

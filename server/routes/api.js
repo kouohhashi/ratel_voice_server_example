@@ -14,6 +14,7 @@ import {
   ORACLE_ADDRESS,
   ORACLE_PASSWORD,
   RPC_SERVER,
+  JUPYTER_DIR,
 } from './settings'
 import {
   makeid,
@@ -1559,7 +1560,7 @@ exports.voice_to_text = (req, res) => {
       mode: 'text',
       pythonPath: '/home/kouohhashi/anaconda3/bin/python',
       pythonOptions: ['-u'],
-      scriptPath: jupyter_dir,
+      scriptPath: JUPYTER_DIR,
       args: [wav_path, model_name]
     };
 
@@ -2130,7 +2131,7 @@ exports.update_app_status = (req, res) => {
       return Promise.reject(Error("no such app"))
     }
     app_info = results
-    
+
     if ( app_info.max_chapter_id > parseInt(max_chapter_id) ) {
       return Promise.reject(Error("max_chapter_id has to be bigger than "+app_info.max_chapter_id))
     }
