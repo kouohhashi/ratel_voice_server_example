@@ -5,7 +5,7 @@ You can test entire flow from obtaining data for AI training in exchange for tok
 
 This example is for voice recognition system.
 >  you can try it without blockchain parts if you want   
-For more information about the idea, please check [website](https://ratelnetwork.com).  
+For more information about the idea, please check [website](https://ratelnetwork.com) or [blog](https://medium.com/@kouohhashi/what-if-we-could-get-training-data-for-ai-and-raise-money-at-a-time-493dbf6cdc27).  
 
 ## Features
 1. Import texts from epub for data contributors to read out
