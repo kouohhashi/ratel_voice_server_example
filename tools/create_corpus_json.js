@@ -1,6 +1,6 @@
 import {
   DATABASE_URI,
-  CORPUS_DIR,
+  JUPYTER_DIR,
 } from '../server/routes/settings';
 import MongoDbHelper from '../server/routes/MongoDbHelper';
 const mongoDbHelper = new MongoDbHelper(DATABASE_URI);
@@ -168,7 +168,7 @@ let create_desc_json = () => {
     // save train_corpus
     return new Promise((resolve, reject) => {
 
-      let file_name = CORPUS_DIR+"train_corpus.json"
+      let file_name = JUPYTER_DIR+"train_corpus.json"
 
       fs.writeFile(file_name, train_corpus, (err) => {
         if (err){
@@ -182,7 +182,7 @@ let create_desc_json = () => {
     // save valid_corpus
     return new Promise((resolve, reject) => {
 
-      let file_name = CORPUS_DIR+"valid_corpus.json"
+      let file_name = JUPYTER_DIR+"valid_corpus.json"
 
       fs.writeFile(file_name, valid_corpus, (err) => {
         if (err){
@@ -196,7 +196,7 @@ let create_desc_json = () => {
     // save train_corpus
     return new Promise((resolve, reject) => {
 
-      let file_name = CORPUS_DIR+"prediction_corpus.json"
+      let file_name = JUPYTER_DIR+"prediction_corpus.json"
 
       fs.writeFile(file_name, prediction_corpus, (err) => {
         if (err){
