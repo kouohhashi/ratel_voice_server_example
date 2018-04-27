@@ -9,7 +9,7 @@
     "clean": "rm -rf build_voice && mkdir build_voice",
     "build": "babel -d ./build_voice ./server",
     "create_desc_json": "babel-node tools/create_desc_json.js",
-    "init_db":"babel-node tools/init_database.js"
+    "init_db": "babel-node tools/init_database.js"
   },
   "author": "Ko Ohashi",
   "license": "MIT",
